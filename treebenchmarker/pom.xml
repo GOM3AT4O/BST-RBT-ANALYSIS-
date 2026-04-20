@@ -14,9 +14,10 @@
     </properties>
 
     <dependencies>
+        <!-- ✅ Replaces junit-jupiter-engine alone — includes API + Engine + Params -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
+            <artifactId>junit-jupiter</artifactId>
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
@@ -33,5 +34,16 @@
             <version>1.4.11</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- ✅ Required for Maven to actually discover and run JUnit 5 tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

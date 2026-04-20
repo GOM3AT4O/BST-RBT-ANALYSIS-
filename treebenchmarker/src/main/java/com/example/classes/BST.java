@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class BST implements TreeInterface{
 
-    private static final Logger logger = LoggerFactory.getLogger(BST.class);
+   private static final Logger logger = LoggerFactory.getLogger(BST.class);
 
     //THE VALIDATION FLAG
     static final boolean VALIDATE = false;
@@ -32,7 +32,7 @@ public class BST implements TreeInterface{
 
     @Override
     public boolean insert(int v){
-        logger.debug("trynna insert the value : {}",v);
+      // logger.debug("trynna insert the value : {}",v);
 
         //if the tree is empty just insert the node as the root 
         if(root ==null){
@@ -45,7 +45,7 @@ public class BST implements TreeInterface{
         Node current = root;
         while(true){
             if(v ==current.value){
-                logger.debug("value {} already there in the tree so i ignore",v);
+            //   logger.debug("value {} already there in the tree so i ignore",v);
                 return false;
 
             }else if(v < current.value){
@@ -70,7 +70,7 @@ public class BST implements TreeInterface{
 
     @Override
     public boolean delete(int v){
-        logger.debug("tryna delete the value {}",v);
+      //  logger.debug("tryna delete the value {}",v);
         int initialSize = size ; 
 
         // USE RECURSION 
