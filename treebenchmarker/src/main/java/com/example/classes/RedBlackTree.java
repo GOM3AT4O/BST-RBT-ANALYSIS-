@@ -124,7 +124,7 @@ public class RedBlackTree implements TreeInterface {
             y = minimum(z.right);
             yOriginalColor = y.color;
             xToFix = y.right;
-            if(x.parent ==z){
+            if(y.parent ==z){
                 xToFix.parent = y;
 
             }else{
