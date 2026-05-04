@@ -1,5 +1,7 @@
 # Data Structures Benchmark: BST vs. RBT
 
+![Determined to Code](https://cdn.devdojo.com/images/july2021/sibling.gif)
+
 ## Overview
 This project is a comprehensive Java benchmarking suite designed to analyze and compare the performance of a standard **Binary Search Tree (BST)**, a self-balancing **Red-Black Tree (RBT)**, and **QuickSort**. 
 
